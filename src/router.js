@@ -1,0 +1,42 @@
+import { createRouter,createWebHistory } from "vue-router";
+
+export default createRouter({
+    history:createWebHistory(),
+    routes:[
+        {
+            name:'home',
+            path:'/',
+            component:import('@/pages/Index.vue')
+        },
+        {
+            name:'store',
+            path:'/store',
+            component:import('@/pages/Store.vue')
+        },
+        {
+            name:'news',
+            path:'/new',
+            component:import('@/pages/New.vue')
+        },
+        {
+            name:'contact',
+            path:'/contact',
+            component:import('@/pages/Contact.vue')
+        },
+        {
+            name:'product',
+            path:'/product/:id',
+            component:import('@/pages/DetailProduct.vue')
+        },
+        {
+            name:'collection',
+            path:'/collection',
+            component:import('@/pages/Collection.vue')
+        },
+        {
+            name:'baskets',
+            path:'/baskets',
+            component:import('@/pages/Baskets.vue')
+        }
+    ]
+})

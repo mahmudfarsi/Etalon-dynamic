@@ -1,0 +1,95 @@
+<template>
+    <div>
+        <Header class="bg-green py-[25px] px-[80px]">
+            <Nav class="nav">
+              <Row
+                :is-simple="true"
+                class="nav-row"
+              >
+                <div class="logo">
+                  <p>
+                    <a
+                      href=""
+                      class="logo"
+                    >
+                      Etalon
+                    </a>
+                  </p>
+                </div>
+                <Row
+                  tag="ul"
+                  class="nav-list"
+                >
+                  <li>
+                    <router-link 
+                    :to="{name:'home'}"
+                    active-class="active"
+                    class="item-list">
+                        Home
+                    </router-link>
+                  </li>
+                  <li>
+                    <router-link 
+                    :to="{name:'store'}"
+                    active-class="active"
+                    class="item-list">
+                        Store
+                    </router-link>
+                  </li>
+                  <li>
+                    <router-link 
+                    :to="{name:'news'}"
+                    active-class="active"
+                    class="item-list">
+                        new
+                    </router-link>
+                  </li>
+                  <li>
+                    <router-link 
+                    :to="{name:'contact'}"
+                    active-class="active"
+                    class="item-list">
+                        contact
+                    </router-link>
+                  </li>
+                </Row>
+                <Button tag="router-link" :is-icon-only="true" icon="pack" :to="{name:'baskets'}"/>
+              </Row>
+            </Nav>
+        </Header>
+        baskets
+        {{ basketList }}
+        <Row tag="ul" class="flex flex-wrap">
+            <Product v-for="item in findId" :product="item"/>
+        </Row>
+    </div>
+</template>
+
+
+<script setup>
+    import { computed,ref } from "vue";
+    import Header from '@/components/base/Header.vue';
+    import Button from '@/components/base/Button.vue';
+    import {useBasket} from '@/stores/basket.js';
+    import Product from '@/components/main/Products.vue';
+    import Row from '@/components/base/Row.vue';
+
+
+    const basketList = computed(() => useBasket().basketList);
+    console.log(basketList.value);
+    
+
+   
+    const products = ref([]);
+
+    const getAllProducts = async () => {
+      const response = await fetch(`https://fakestoreapi.com/products`);
+      products.value = await response.json();
+    };
+ 
+
+    
+
+ 
+    getAllProducts();
+</script>
