@@ -1,5 +1,5 @@
 <template>
-  <Card class="w-[303px]">
+  <Card class="w-[303px] min-w-[300px]">
     <template #header>
         <div
           class="bg-white rounded-2xl overflow-hidden flex flex-col items-center gap-[10px] px-[17px] pb-[22px] pt-[10px]"

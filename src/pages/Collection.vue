@@ -59,6 +59,7 @@
         </Row>
       </Container>
     </main>
+    <NavMobile class="fixed bottom-0"/>
   </div>
 </template>
 
@@ -73,6 +74,7 @@ import Button from "@/components/base/Button.vue";
 import { useData } from "@/composables/getData.js";
 import Products from "@/components/main/Products.vue";
 import Container from "@/components/base/Container.vue";
+import NavMobile from "@/components/main/NavMobile.vue";
 
 const limit = 25;
 const { getDatas, datas } = useData({ limit });

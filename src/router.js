@@ -37,6 +37,21 @@ export default createRouter({
             name:'baskets',
             path:'/baskets',
             component:import('@/pages/Baskets.vue')
+        },
+        {
+            name:'badges',
+            path:'/badges',
+            component:import('@/pages/Badges.vue')
+        },
+        {
+            name:'phone',
+            path:'/phone',
+            component:import('@/pages/Phone.vue')
+        },
+        {
+            name:'shop',
+            path:'/shop',
+            component:import('@/pages/Shop.vue')
         }
     ]
 })

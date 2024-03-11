@@ -10,11 +10,9 @@
           <Nav class="nav">
             <Row :is-simple="true" class="nav-row">
               <div class="logo">
-                  <router-link to="/">
-                  <p class="logo">
-                    Etalon
-                  </p>
-                  </router-link>
+                <router-link to="/">
+                  <p class="logo">Etalon</p>
+                </router-link>
               </div>
               <Row tag="ul" class="nav-list">
                 <li>
@@ -54,7 +52,13 @@
                   </router-link>
                 </li>
               </Row>
-                <Button tag="router-link" :is-icon-only="true" icon="pack" :to="{name:'baskets'}"/>
+              <Button
+                tag="router-link"
+                :is-icon-only="true"
+                icon="pack"
+                :to="{ name: 'baskets' }"
+                class="flex"
+              />
             </Row>
           </Nav>
         </Header>
@@ -70,20 +74,43 @@
               :is-icon-only="false"
               tag="router-link"
               to="/collection"
-              class="btn-main"
+              class="btn-main flex"
             >
               Open Collection
             </Button>
           </div>
         </div>
 
-        <!-- img - mobile -->
-        <div class="main-right-mobile" v-for="img in imgMain">
-          <Img :src="img" alt="fasion" height="391" />
-        </div>
-        <!-- img - desktop -->
-        <div class="main-right-desktop" v-for="img in imgMain">
-          <Img :src="img" alt="fasion" height="619" />
+        <div class="md:pl-[100px] relative">
+          <p class="font-lato font-500 text-[36px]
+           text-white absolute top-[120px] left-[30px] smm:hidden md:flex"
+          >
+            $299
+          </p>
+          <!-- img - mobile -->
+          <div class="main-right-mobile circle">
+            <Img src="../public/1 1.png" alt="fasion" height="391" />
+          </div>
+          <!-- img - desktop -->
+          <div class="main-right-desktop circle">
+            <Img src="../public/1 1.png" alt="fasion" height="619" />
+          </div>
+          <div
+            class="rounded-full bg-yellow w-[110px] h-[110px] p-[50px] flex
+            justify-center items-center absolute
+            top-[160px] left-[100px] z-[999] smm:hidden md:flex"
+          >
+            <span class="font-roboto font-700 text-[26px]"> 40% OFF </span>
+          </div>
+          <div class="flex flex-col gap-[10px] items-center absolute right-0 top-[230px] smm:hidden md:flex">
+            <div class="w-[21px] h-[21px] bg-white rounded-full"></div>
+            <div class="w-[16px] h-[16px] bg-opacity-20 rounded-full"></div>
+            <div class="w-[16px] h-[16px] bg-opacity-20 rounded-full"></div>
+          </div>
+          <div class="btns flex gap-[15px] absolute left-0 bottom-[30px] smm:hidden md:flex">
+            <Button  icon="left" class="bg-green border-none"/>
+            <Button  icon="right" class="bg-green border-none"/>
+          </div>
         </div>
       </div>
     </Container>
@@ -160,18 +187,18 @@
 
   <!-- section      -      3     -->
   <Section class="sec-3">
-    <Container>
-      <div class="flex flex-col">
-        <h2 class="title-sellers">Best Sellers</h2>
+    <Container class="min-w-full">
+      <div class="flex flex-col overflow-hidden">
+        <h2 class="title-sellers smm:pl-[10px] md:pl-0">Best Sellers</h2>
         <div class="box-sellers">
-          <Row class="flex gap-[15px] flex-wrap">
+          <Row class="w-full flex smm:flex-nowrap md:flex-wrap overflow-x-scroll gap-[15px] flex-wrap pl-[5px]">
             <Product
               v-for="(item, index) in visible"
               :product="item"
               :key="item.id"
             />
           </Row>
-          <Button :is-icon-only="false" @click="loadMore" class="btn-more">
+          <Button :is-icon-only="false" @click="loadMore" class="btn-more ">
             {{ titleBtn }}
           </Button>
         </div>
@@ -187,7 +214,6 @@
 <script setup>
 import { computed, ref } from "vue";
 
-
 import Section from "@/components/base/Section.vue";
 import Container from "@/components/base/Container.vue";
 import Header from "@/components/base/Header.vue";
@@ -199,26 +225,23 @@ import NavMobile from "@/components/main/NavMobile.vue";
 import Brands from "@/components/main/Brands.vue";
 import Card from "@/components/base/Card.vue";
 import Product from "@/components/main/Products.vue";
-import { useData } from "@/composables/getData.js";
+// import { useData } from "@/composables/getData.js";
 
-const url = 'https://fakestoreapi.com/products'
+const url = "https://fakestoreapi.com/products";
 const dataProducts = ref([]);
-let limit = 4;
+
 const getDatas = async (limit) => {
   const response = await fetch(`${url}?limit=${limit}`);
-  dataProducts.value = await response.json()
-}
-
-
-const imgMain = ["../public/1 1.png"];
+  dataProducts.value = await response.json();
+};
 
 const isToggle = ref(false);
 const loadMore = () => {
-  if(getDatas(4)) {
-    isToggle.value = !isToggle.value
-    getDatas(16);
+  if (!isToggle.value) {
+    isToggle.value = !isToggle.value;
+    getDatas(20);
   } else {
-    isToggle.value = !isToggle.value
+    isToggle.value = !isToggle.value;
     getDatas(4);
   }
 };
@@ -238,11 +261,7 @@ const visible = computed(() => {
   return "No Data!";
 });
 
-
-
-getDatas(limit);
-
-
+getDatas(4);
 
 // const router = useRouter();
 // const goHome = () => {
@@ -251,7 +270,6 @@ getDatas(limit);
 //     path:'/'
 //   })
 // }
-
 
 // const visibleData = computed(() => {
 //   if(visible.value.length && !isToggle.value){
@@ -262,50 +280,53 @@ getDatas(limit);
 </script>
 
 <style scoped>
-.main::before {
+.circle::before {
   content: "";
   width: 192px;
   height: 192px;
   border-radius: 50%;
-  background: rgba(42, 64, 50, 1);
+  background: rgba(27, 45, 34, 1);
   position: absolute;
+  right: 55px;
   bottom: 90px;
-  z-index: 0;
+  z-index: -1;
 }
 
-.main::after {
+.circle::after {
   content: "";
   width: 192px;
   height: 192px;
   border-radius: 50%;
-  background: rgba(42, 64, 50, 1);
+  background: rgba(27, 45, 34, 1);
   position: absolute;
-  bottom: 160px;
-  left: 120px;
+  bottom: 150px;
+  left: 75px;
+  z-index: -1;
 }
 
 @media screen and (min-width: 768px) {
-  .main::before {
+  .circle::before {
     content: "";
     width: 308px;
     height: 308px;
     border-radius: 50%;
-    background: rgba(42, 64, 50, 1);
+    background: rgba(27, 45, 34, 1);
     position: absolute;
-    bottom: 190px;
-    z-index: 0;
-    left: 850px;
+    top: 125px;
+    z-index: -1;
+    right: -80px;
   }
 
-  .main::after {
+  .circle::after {
     content: "";
     width: 308px;
     height: 308px;
     border-radius: 50%;
-    background: rgba(42, 64, 50, 1);
+    background: rgba(27, 45, 34, 1);
     position: absolute;
-    bottom: 60px;
-    left: 690px;
+    bottom: 90px;
+    left: -70px;
+    z-index: -1;
   }
 }
 
@@ -315,6 +336,6 @@ getDatas(limit);
   } */
 
 .active {
-  color:#fff
+  color: #fff;
 }
 </style>

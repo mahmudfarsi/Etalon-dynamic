@@ -56,7 +56,7 @@
     /*         sec-1         */
 
     .sec-1 {
-        @apply w-full h-auto bg-green overflow-hidden relative
+        @apply w-full h-auto bg-green relative
     }
 
     .main {
@@ -173,10 +173,10 @@
     }
 
     .box-sellers {
-        @apply mt-[60px] flex flex-col justify-center items-center gap-[50px]
+        @apply mt-[60px]  flex flex-col justify-center items-center gap-[50px]
     }
 
     .btn-more {
-        @apply w-[207px] border-none rounded-md bg-black font-lato font-400 text-white px-[40px] py-[16px]
+        @apply w-[207px] border-none rounded-md bg-black font-lato font-400 text-white px-[40px] py-[16px] hidden md:flex
     }
 }

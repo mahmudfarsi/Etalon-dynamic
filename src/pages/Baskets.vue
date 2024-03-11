@@ -62,6 +62,7 @@
         <Row tag="ul" class="flex flex-wrap">
             <Product v-for="item in findId" :product="item"/>
         </Row>
+        <NavMobile class="fixed bottom-0" />
     </div>
 </template>
 
@@ -73,6 +74,7 @@
     import {useBasket} from '@/stores/basket.js';
     import Product from '@/components/main/Products.vue';
     import Row from '@/components/base/Row.vue';
+    import NavMobile from "@/components/main/NavMobile.vue";
 
 
     const basketList = computed(() => useBasket().basketList);

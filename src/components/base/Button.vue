@@ -31,18 +31,20 @@
     }
 
     .btn--noSimple {
-        @apply flex justify-center
+        @apply justify-center
     }
 
     .btn--bg-none {
         @apply  rounded-full border-none bg-white p-[10px]
     }
 
-    .btn--select {
+    /* .btn--select {
         @apply bg-yellow
     }
 
     .btn--noSelect {
         @apply bg-white text-black
-    }
+    } */
+
+    
 </style>

@@ -56,6 +56,7 @@
           <div class="w-[650px] h-[500px] flex justify-center overflow-hidden">
             <Img
               :src="product.image"
+              :alt="product.title "
               class="w-full h-full object-cover"
               height="450"
             />
@@ -85,8 +86,10 @@
           />
         </Row>
       </Container>
+      
     </main>
     <div v-else class="font-lato font-900">is Loading.......!</div>
+    <NavMobile class="fixed bottom-0"/>
   </div>
 </template>
 
@@ -100,6 +103,7 @@ import Row from "@/components/base/Row.vue";
 import Button from "@/components/base/Button.vue";
 import Container from "@/components/base/Container.vue";
 import Products from "@/components/main/Products.vue";
+import NavMobile from "@/components/main/NavMobile.vue";
 
 const route = useRoute();
 const product = ref(null);

@@ -34,7 +34,12 @@ export default {
         'gray-card' :'rgba(197, 194, 202, 1)',
         'light-gray':'rgba(233, 233, 233, 1)',
         'gray-span':'rgba(0, 0, 0, 0.6)',
-        'opacity-30':'rgba(255, 255, 255, 0.3)'
+        'opacity-30':'rgba(255, 255, 255, 0.3)',
+        'opacity-20':'rgba(255, 255, 255, 0.2)'
+    
+      },
+      padding:{
+        '50px':'50px'
       }
     },
     screens:{
