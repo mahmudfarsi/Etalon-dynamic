@@ -35,11 +35,18 @@ export default {
         'light-gray':'rgba(233, 233, 233, 1)',
         'gray-span':'rgba(0, 0, 0, 0.6)',
         'opacity-30':'rgba(255, 255, 255, 0.3)',
-        'opacity-20':'rgba(255, 255, 255, 0.2)'
+        'opacity-20':'rgba(255, 255, 255, 0.2)',
+        'opacity-025': 'rgba(24, 24, 24, 0.25)'
     
       },
       padding:{
         '50px':'50px'
+      },
+      opacity:{
+
+      },
+      borderRadius:{
+        '8px':'8px'
       }
     },
     screens:{
@@ -59,6 +66,6 @@ export default {
       // => @media (min-width: 1536px) { ... }
     }
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 
