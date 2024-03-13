@@ -55,9 +55,7 @@
         </Row>
       </Nav>
     </Header>
-    baskets
-    {{ basketList }}
-    <Row tag="ul" class="flex flex-wrap">
+    <Row tag="ul" class="w-full pt-50px px-80px pb-50px flex flex-wrap gap-30 ">
       <Product v-for="item in findId" :product="item" />
     </Row>
     <NavMobile class="fixed bottom-0" />
@@ -65,7 +63,7 @@
 </template>
 
 <script setup>
-import { computed, ref,onMounted } from "vue";
+import { computed, ref } from "vue";
 import Header from "@/components/base/Header.vue";
 import Button from "@/components/base/Button.vue";
 import { useBasket } from "@/stores/basket.js";
@@ -74,36 +72,21 @@ import Row from "@/components/base/Row.vue";
 import NavMobile from "@/components/main/NavMobile.vue";
 
 const basketList = computed(() => useBasket().basketList);
-const arr = Object.entries(basketList.value).map((item) => item[1]);
-// console.log(arr);
+
 
 const products = ref([]);
 const getAllProducts = async () => {
   const response = await fetch(`https://fakestoreapi.com/products`);
   products.value = await response.json();
 };
-// console.log(products.value);
-// console.log(typeof arr);
-// console.log(products['_value']);
-// console.log(products);
 
-const items = ref([]);
 const findId = computed(() => {
   if (products.value) {
-    // console.log(products.value);
-    // const find = products.value.filter((item) => arr.indexOf(item.id));
-    // return items.value.push(find);
-   items.value = products.value.filter(item => basketList.value.includes(item.id))
-  //  return  products.value.filter(item => basketList.value.includes(item.id))
+   return  products.value.filter(item => basketList.value.includes(item.id))
   }
   return "no data";
 });
-// console.log(findId);
 
-// onMounted(() => {
-//   // products.value.focus();
-//   console.log(products.value);
-// });
 
 getAllProducts();
 </script>
