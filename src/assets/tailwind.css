@@ -71,7 +71,7 @@
         @apply md:pl-0px
     }
     .year {
-        @apply  font-lato font-normal  smm:text-lg md:text-5xl text-white
+        @apply  font-lato font-normal italic smm:text-lg md:text-5xl text-white
     }
 
     .main-title {

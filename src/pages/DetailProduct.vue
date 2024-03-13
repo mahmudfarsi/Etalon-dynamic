@@ -77,12 +77,15 @@
           </div>
         </div>
       </Container>
-      <Container>
+      <Container class="pb-8">
+        <h2 class="capitalize font-lato font-medium text-2xl pb-12">
+          related products
+        </h2>
         <Row tag="ul" class="flex flex-wrap gap-22">
           <Products
             v-for="item in catProduct"
             :product="item"
-            class=" p-[15px] "
+            class=" p-[15px] shadow-md rounded-md"
           />
         </Row>
       </Container>

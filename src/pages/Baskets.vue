@@ -55,9 +55,33 @@
         </Row>
       </Nav>
     </Header>
-    <Row tag="ul" class="w-full pt-50px px-80px pb-50px flex flex-wrap gap-30 ">
-      <Product v-for="item in findId" :product="item" />
-    </Row>
+    <Container>
+
+      <!--    baskets    -->
+      <div class="flex flex-col gap-30 smm:pt-6 md:pt-14">
+        <h1 class="capitalize font-roboto font-medium text-4xl">baskets</h1>
+        <Row tag="ul" class="w-full pb-50px flex flex-wrap gap-15">
+          <Product
+            v-for="item in findBaskets"
+            :product="item"
+            class="shadow-md rounded-lg px-10px py-10px"
+          />
+        </Row>
+      </div>
+
+
+      <!--  favorites  -->
+      <div class="flex flex-col gap-30 smm:pt-6 md:pt-14 mt-3">
+        <h1 class="capitalize font-roboto font-medium text-4xl">favorites</h1>
+        <Row tag="ul" class="w-full pb-50px flex flex-wrap gap-15">
+          <Product
+            v-for="item in findFav"
+            :product="item"
+            class="shadow-md rounded-lg px-10px py-10px"
+          />
+        </Row>
+      </div>
+    </Container>
     <NavMobile class="fixed bottom-0" />
   </div>
 </template>
@@ -67,11 +91,14 @@ import { computed, ref } from "vue";
 import Header from "@/components/base/Header.vue";
 import Button from "@/components/base/Button.vue";
 import { useBasket } from "@/stores/basket.js";
+import {useProducts} from '@/stores/products.js'
 import Product from "@/components/main/Products.vue";
 import Row from "@/components/base/Row.vue";
 import NavMobile from "@/components/main/NavMobile.vue";
+import Container from "@/components/base/Container.vue";
 
 const basketList = computed(() => useBasket().basketList);
+const isFav = computed(() => useProducts().isFav);
 
 
 const products = ref([]);
@@ -80,13 +107,20 @@ const getAllProducts = async () => {
   products.value = await response.json();
 };
 
-const findId = computed(() => {
+const findBaskets = computed(() => {
   if (products.value) {
-   return  products.value.filter(item => basketList.value.includes(item.id))
+    return products.value.filter((item) => basketList.value.includes(item.id));
   }
   return "no data";
 });
 
+
+const findFav = computed(() => {
+  if(products.value){
+    return products.value.filter((item) => isFav.value.includes(item.id))
+  }
+  return 'no data!'
+})
 
 getAllProducts();
 </script>
