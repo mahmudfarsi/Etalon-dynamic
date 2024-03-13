@@ -65,10 +65,10 @@
             <h2 class="font-lato font-normal">
               {{ product.title }}
             </h2>
-            <p class="mt-[20px] font-roboto font-light">
+            <p class="mt-20px font-roboto font-light">
               {{ product.description }}
             </p>
-            <div class="w-300 flex justify-between mt-[15px]">
+            <div class="w-300 flex justify-between mt-15px">
               <span class="prcie font-lato font-normal"> price: {{ price }} </span>
               <span class="font-lato font-normal">
                 Rate: {{ product.rating.rate }}

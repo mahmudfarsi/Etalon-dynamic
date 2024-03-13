@@ -20,7 +20,7 @@
         </div>
     </template>
     <template #body>
-      <div class="left flex justify-between flex-nowrap mt-[10px]">
+      <div class="left flex justify-between flex-nowrap mt-10px">
         <div class="flex flex-col h-full">
           <h4 class="font-roboto font-medium text-smm text-black">
             {{ product.title }}

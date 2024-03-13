@@ -60,7 +60,7 @@
     }
 
     .main {
-        @apply w-full md:flex md:justify-between md:mt-[50px] relative
+        @apply w-full md:flex md:justify-between md:mt-50px relative
     }
 
     .main-left {
@@ -83,15 +83,15 @@
     }
 
     .btn-main {
-        @apply bg-yellow rounded-md px-[40px] py-[16px] w-180 whitespace-nowrap mt-[20px] font-lato font-normal text-sm
+        @apply bg-yellow rounded-md px-[40px] py-[16px] w-180 whitespace-nowrap mt-20px font-lato font-normal text-sm
     }
 
     .main-right-mobile {
-        @apply w-208 mt-[-15px] mx-[40px] md:hidden relative z-998
+        @apply w-208 mt--15px mx-40px md:hidden relative z-998
     }
 
     .main-right-desktop {
-        @apply w-342 mt-[45px] mr-[190px] smm:hidden md:flex relative z-998
+        @apply w-342 mt-45px mr-190px smm:hidden md:flex relative z-998
     }
 
 
@@ -165,7 +165,7 @@
 
 
     .sec-3 {
-        @apply bg-light-gray mt-[90px] py-[80px]
+        @apply bg-light-gray mt-90px py-[80px]
     }
 
     .title-sellers {
@@ -173,7 +173,7 @@
     }
 
     .box-sellers {
-        @apply mt-[60px]  flex flex-col justify-center items-center gap-50
+        @apply mt-60px  flex flex-col justify-center items-center gap-50
     }
 
     .btn-more {

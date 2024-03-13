@@ -78,6 +78,23 @@ export default {
         '80':'80px'
       },
 
+      margin:{
+        '-15px':'-15px',
+        '-1px':'-1px',
+        '-5px':'-5px',
+        '10px':'10px',
+        '15px':'15px',
+        '20px':'20px',
+        '27px':'27px',
+        '40px':'40px',
+        '45px':'45px',
+        '50px':'50px',
+        '60px':'60px',
+        '69px':'69px',
+        '90px':'90px',
+        '190px':'190px'
+      },
+
 
       fontSize:{
         smm:'13px',

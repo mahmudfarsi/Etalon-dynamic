@@ -114,7 +114,7 @@
         </div>
       </div>
     </Container>
-    <Brands class="md:mt-[-1px]" />
+    <Brands class="md:mt--5px" />
   </Section>
 
   <!-- section -    2  -->
@@ -159,11 +159,11 @@
               <h3 class="card-right-title">Men’s Sunglasses Collection</h3>
             </template>
             <template #body>
-              <div class="flex items-center mt-[27px]">
+              <div class="flex items-center mt-27px">
                 <Img src="../public/3 1.png" class="md:hidden" height="216" />
                 <Img
                   src="../public/3 1.png"
-                  class="smm:hidden md:flex mt-[69px]"
+                  class="smm:hidden md:flex mt-69px"
                   height="455"
                 />
                 <h4 class="title-off">40% OFF</h4>
