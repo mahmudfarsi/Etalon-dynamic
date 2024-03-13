@@ -220,47 +220,47 @@
       </div>
     </div>
     <div class="flex flex-col smm:justify-center smm:items-center md:items-start md:justify-start gap-[80px]  absolute smm:top-[100px] md:top-[70px] smm:left-[10px] md:left-[670px] ">
-      <h3 class="font-lato font-700 smm:text-[32px] md:text-[64px] text-white">
+      <h3 class="font-lato font-bold smm:text-[32px] md:text-[64px] text-white">
         Sale ends soon
       </h3>
       <div class="flex flex-nowrap smm:gap-[15px] md:gap-[30px]">
 
 
         <div class="box- flex flex-col items-center gap-[10px]">
-          <div class="smm:px-[30px] smm:py-[20px] md:px-[50px] rounded-8px md:py-[19px] bg-opacity-025 text-white font-roboto font-700 smm:text-[24px] md:text-[64px]">
+          <div class="smm:px-[30px] smm:py-[20px] md:px-[50px] rounded-8px md:py-[19px] bg-opacity-025 text-white font-roboto font-bold smm:text-[24px] md:text-[64px]">
             3
           </div>
-          <span class="font-roboto font-300 smm:text-[12px] md:text-[24px] capitalize text-white">
+          <span class="font-roboto font-light smm:text-[12px] md:text-[24px] capitalize text-white">
             days
           </span>
         </div>
 
         
         <div class="box- flex flex-col items-center gap-[10px]">
-          <div class="smm:px-[30px] smm:py-[20px] md:px-[50px] rounded-8px md:py-[19px] bg-opacity-025 text-white font-roboto font-700 smm:text-[24px] md:text-[64px]">
+          <div class="smm:px-[30px] smm:py-[20px] md:px-[50px] rounded-8px md:py-[19px] bg-opacity-025 text-white font-roboto font-bold smm:text-[24px] md:text-[64px]">
             3
           </div>
-          <span class="font-roboto font-300 smm:text-[12px] md:text-[24px] capitalize text-white">
+          <span class="font-roboto font-light smm:text-[12px] md:text-[24px] capitalize text-white">
             hours
           </span>
         </div>
 
 
         <div class="box- flex flex-col items-center gap-[10px]">
-          <div class="smm:px-[30px] smm:py-[20px] md:px-[50px] rounded-8px md:py-[19px] bg-opacity-025 text-white font-roboto font-700 smm:text-[24px] md:text-[64px]">
+          <div class="smm:px-[30px] smm:py-[20px] md:px-[50px] rounded-8px md:py-[19px] bg-opacity-025 text-white font-roboto font-bold smm:text-[24px] md:text-[64px]">
             3
           </div>
-          <span class="font-roboto font-300 smm:text-[12px] md:text-[24px] capitalize text-white">
+          <span class="font-roboto font-light smm:text-[12px] md:text-[24px] capitalize text-white">
             Minutes
           </span>
         </div>
 
 
         <div class="box- flex flex-col items-center gap-[10px]">
-          <div class="smm:px-[30px] smm:py-[20px] md:px-[50px] rounded-8px md:py-[19px] bg-opacity-025 text-white font-roboto font-700 smm:text-[24px] md:text-[64px]">
+          <div class="smm:px-[30px] smm:py-[20px] md:px-[50px] rounded-8px md:py-[19px] bg-opacity-025 text-white font-roboto font-bold smm:text-[24px] md:text-[64px]">
             3
           </div>
-          <span class="font-roboto font-300 smm:text-[12px] md:text-[24px] capitalize text-white">
+          <span class="font-roboto font-light smm:text-[12px] md:text-[24px] capitalize text-white">
             Seconds
           </span>
         </div>

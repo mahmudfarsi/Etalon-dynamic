@@ -22,10 +22,10 @@
     <template #body>
       <div class="left flex justify-between flex-nowrap mt-[10px]">
         <div class="flex flex-col h-full">
-          <h4 class="font-roboto font-500 text-[13px] text-black">
+          <h4 class="font-roboto font-medium text-[13px] text-black">
             {{ product.title }}
           </h4>
-          <span class="font-roboto font-300 text-[16px] text-gray-span">
+          <span class="font-roboto font-light text-[16px] text-gray-span">
             {{ price }}
           </span>
         </div>

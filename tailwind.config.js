@@ -15,11 +15,11 @@ export default {
         // => @media (min-width: 330px) { ... }
       },
       fontWeight:{
-        700:'700',
-        900:'900',
-        300:'300',
-        400:'400',
-        500:'500'
+        black:'900',
+        bold:'700',
+        medium:'500',
+        normal:'400',
+        light:'300'
       },
       colors:{
         'white':'#fff',
@@ -42,9 +42,6 @@ export default {
       padding:{
         '50px':'50px'
       },
-      opacity:{
-
-      },
       borderRadius:{
         '8px':'8px'
       }
@@ -66,6 +63,6 @@ export default {
       // => @media (min-width: 1536px) { ... }
     }
   },
-  plugins: [require("daisyui")],
+  plugins: [],
 }
 

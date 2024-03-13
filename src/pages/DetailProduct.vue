@@ -61,16 +61,16 @@
               height="450"
             />
           </div>
-          <div class="w-[480px] h-auto flex- flex-col gap-[70px]">
-            <h2 class="font-lato font-400">
+          <div class="w-[480px] h-auto flex flex-col gap-[70px]">
+            <h2 class="font-lato font-normal">
               {{ product.title }}
             </h2>
-            <p class="mt-[20px] font-roboto font-300">
+            <p class="mt-[20px] font-roboto font-light">
               {{ product.description }}
             </p>
             <div class="w-[300px] flex justify-between mt-[15px]">
-              <span class="prcie font-lato font-400"> price: {{ price }} </span>
-              <span class="font-lato font-400">
+              <span class="prcie font-lato font-normal"> price: {{ price }} </span>
+              <span class="font-lato font-normal">
                 Rate: {{ product.rating.rate }}
               </span>
             </div>
@@ -82,13 +82,13 @@
           <Products
             v-for="item in catProduct"
             :product="item"
-            class="shadow-lg p-[15px] rounded-lg"
+            class=" p-[15px] "
           />
         </Row>
       </Container>
       
     </main>
-    <div v-else class="font-lato font-900">is Loading.......!</div>
+    <div v-else class="font-lato font-black">is Loading.......!</div>
     <NavMobile class="fixed bottom-0"/>
   </div>
 </template>
