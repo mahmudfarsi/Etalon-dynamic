@@ -54,7 +54,7 @@
       class="w-full bg-light-gray pt-[50px] flex flex-row justify-center items-center"
     >
       <Container>
-        <Row tag="ul" class="flex flex-wrap gap-[15px]">
+        <Row tag="ul" class="flex flex-wrap gap-15">
           <Products v-for="item in product" :product="item" />
         </Row>
       </Container>

@@ -61,7 +61,7 @@
               height="450"
             />
           </div>
-          <div class="w-480 h-auto flex flex-col gap-[70px]">
+          <div class="w-480 h-auto flex flex-col gap-70">
             <h2 class="font-lato font-normal">
               {{ product.title }}
             </h2>
@@ -78,7 +78,7 @@
         </div>
       </Container>
       <Container>
-        <Row tag="ul" class="flex flex-wrap gap-[22px]">
+        <Row tag="ul" class="flex flex-wrap gap-22">
           <Products
             v-for="item in catProduct"
             :product="item"

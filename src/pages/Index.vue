@@ -102,12 +102,12 @@
           >
             <span class="font-roboto font-700 text-[26px]"> 40% OFF </span>
           </div>
-          <div class="flex flex-col gap-[10px] items-center absolute right-0 top-[230px] smm:hidden md:flex">
+          <div class="flex flex-col gap-10 items-center absolute right-0 top-[230px] smm:hidden md:flex">
             <div class="w-21 h-[21px] bg-white rounded-full"></div>
             <div class="w-16 h-[16px] bg-opacity-20 rounded-full"></div>
             <div class="w-16 h-[16px] bg-opacity-20 rounded-full"></div>
           </div>
-          <div class="btns flex gap-[15px] absolute left-0 bottom-[30px] smm:hidden md:flex">
+          <div class="btns flex gap-15 absolute left-0 bottom-[30px] smm:hidden md:flex">
             <Button  icon="left" class="bg-green border-none"/>
             <Button  icon="right" class="bg-green border-none"/>
           </div>
@@ -210,7 +210,7 @@
   <!--  footer  -->
   <Section class=" w-full h-[449px] flex smm:justify-center md:justify-start items-center overflow-hidden bg-green relative">
     <div class="w-450 h-full bg-yellow relative smm:hidden md:flex">
-      <div class="flex flex-col gap-[30px] absolute top-[70px] left-[100px]">
+      <div class="flex flex-col gap-30 absolute top-[70px] left-[100px]">
         <p class="font-roboto font-700 text-[64px]">
           70% OFF
         </p>
@@ -219,14 +219,14 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-col smm:justify-center smm:items-center md:items-start md:justify-start gap-[80px]  absolute smm:top-[100px] md:top-[70px] smm:left-[10px] md:left-[670px] ">
+    <div class="flex flex-col smm:justify-center smm:items-center md:items-start md:justify-start gap-80  absolute smm:top-[100px] md:top-[70px] smm:left-[10px] md:left-[670px] ">
       <h3 class="font-lato font-bold smm:text-[32px] md:text-[64px] text-white">
         Sale ends soon
       </h3>
-      <div class="flex flex-nowrap smm:gap-[15px] md:gap-[30px]">
+      <div class="flex flex-nowrap smm:gap-15 md:gap-30">
 
 
-        <div class="box- flex flex-col items-center gap-[10px]">
+        <div class="box- flex flex-col items-center gap-10">
           <div class="smm:px-[30px] smm:py-[20px] md:px-[50px] rounded-8px md:py-[19px] bg-opacity-025 text-white font-roboto font-bold smm:text-[24px] md:text-[64px]">
             3
           </div>
@@ -236,7 +236,7 @@
         </div>
 
         
-        <div class="box- flex flex-col items-center gap-[10px]">
+        <div class="box- flex flex-col items-center gap-10">
           <div class="smm:px-[30px] smm:py-[20px] md:px-[50px] rounded-8px md:py-[19px] bg-opacity-025 text-white font-roboto font-bold smm:text-[24px] md:text-[64px]">
             3
           </div>
@@ -246,7 +246,7 @@
         </div>
 
 
-        <div class="box- flex flex-col items-center gap-[10px]">
+        <div class="box- flex flex-col items-center gap-10">
           <div class="smm:px-[30px] smm:py-[20px] md:px-[50px] rounded-8px md:py-[19px] bg-opacity-025 text-white font-roboto font-bold smm:text-[24px] md:text-[64px]">
             3
           </div>
@@ -256,7 +256,7 @@
         </div>
 
 
-        <div class="box- flex flex-col items-center gap-[10px]">
+        <div class="box- flex flex-col items-center gap-10">
           <div class="smm:px-[30px] smm:py-[20px] md:px-[50px] rounded-8px md:py-[19px] bg-opacity-025 text-white font-roboto font-bold smm:text-[24px] md:text-[64px]">
             3
           </div>
