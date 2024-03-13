@@ -121,7 +121,7 @@
     }
 
     .card-left {
-        @apply smm:w-full md:max-w-[550px]  smm:min-h-[440px] md:h-[550px] bg-gray-card flex flex-col relative rounded-2xl overflow-hidden
+        @apply smm:w-full md:max-w-550  smm:min-h-[440px] md:h-[550px] bg-gray-card flex flex-col relative rounded-2xl overflow-hidden
     }
 
     .card-left-title {
@@ -145,11 +145,11 @@
     }
 
     .card-right-title {
-        @apply min-w-[139px] max-w-[185px] font-lato font-bold text-base text-center absolute top-[10px] right-[-6px]
+        @apply min-w-139 max-w-185 font-lato font-bold text-base text-center absolute top-[10px] right-[-6px]
     }
 
     .title-off {
-        @apply min-w-[95px] max-w-[189px] whitespace-nowrap font-lato font-bold text-md
+        @apply min-w-95 max-w-189 whitespace-nowrap font-lato font-bold text-md
     }
 
     .btn-collection-right {
