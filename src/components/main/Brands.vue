@@ -3,7 +3,7 @@
 ----------- template
 
 <template>
-    <Row tag="ul" class="flex flex-row  nowrap w-full smm:py-[10px] mx-auto mt-[-10px] bg-black px-[12px] gap-[10px] justify-between items-center md:px-[80px] md:py-[30px]">
+    <Row tag="ul" class="flex flex-row  nowrap w-full smm:py-10px mx-auto mt--10px bg-black px-12px gap-10 justify-between items-center md:px-80px md:py-30px">
         <Img v-for="img in dataImg" :src="img" alt="brand" :key="img" height="10"  class="md:hidden"/>
         <Img v-for="img in dataImgDesktop" :src="img" alt="brand" :key="img" height="40" class="smm:hidden md:flex"/>
     </Row>
