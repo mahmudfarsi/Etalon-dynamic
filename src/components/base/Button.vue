@@ -27,7 +27,7 @@
 }
     .btn--simple {
         @apply flex justify-center items-center rounded-full
-        border-none bg-yellow w-40px h-40px
+        border-none bg-yellow w-40 h-40
     }
 
     .btn--noSimple {
