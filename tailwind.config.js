@@ -6,14 +6,20 @@ export default {
   ],
   theme: {
     extend: {
+
+
       fontFamily:{
         lato:['Lato','sans-serif'],
         roboto:['Roboto','sans-serif']
       },
+
+
       screens:{
         'smm':'300px'
         // => @media (min-width: 330px) { ... }
       },
+
+
       width:{
         '16':'16px',
         '21':'21px',
@@ -40,6 +46,21 @@ export default {
         '95':'95px',
         '139':'139px',
         '300':'300px'
+      },
+
+      height:{
+        '21':'21px',
+        '16':'16px',
+        '110':'110px',
+        '413':'413px',
+        '449':'449px',
+        '500':'500px',
+        '550':'550px'
+      },
+
+      minHeight:{
+        '245':'245px',
+        '440':'440px'
       },
 
   
@@ -94,6 +115,8 @@ export default {
         normal:'400',
         light:'300'
       },
+
+
       colors:{
         'white':'#fff',
         'black':'#000',
@@ -109,9 +132,13 @@ export default {
         'opacity-025': 'rgba(24, 24, 24, 0.25)'
     
       },
+
+
       borderRadius:{
         '8px':'8px'
       }
+
+
     },
     screens:{
       'sm': '640px',

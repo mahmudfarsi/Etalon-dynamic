@@ -53,7 +53,7 @@
     <main v-if="product" class="w-full h-screen">
       <Container>
         <div class="w-full h-screen flex pt-[150px] items-start justify-around">
-          <div class="w-650 h-[500px] flex justify-center overflow-hidden">
+          <div class="w-650 h-500 flex justify-center overflow-hidden">
             <Img
               :src="product.image"
               :alt="product.title "

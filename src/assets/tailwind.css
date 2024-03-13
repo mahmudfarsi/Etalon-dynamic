@@ -71,7 +71,7 @@
         @apply md:pl-[0px]
     }
     .year {
-        @apply  font-lato font-normal italic smm:text-lg md:text-5xl text-white
+        @apply  font-lato font-normal  smm:text-lg md:text-5xl text-white
     }
 
     .main-title {
@@ -121,7 +121,7 @@
     }
 
     .card-left {
-        @apply smm:w-full md:max-w-550  smm:min-h-[440px] md:h-[550px] bg-gray-card flex flex-col relative rounded-2xl overflow-hidden
+        @apply smm:w-full md:max-w-550  smm:min-h-440 md:h-550 bg-gray-card flex flex-col relative rounded-2xl overflow-hidden
     }
 
     .card-left-title {
@@ -141,7 +141,7 @@
     }
 
     .card-right {
-        @apply smm:w-full smm:min-h-[245px] md:h-[550px] flex flex-col relative rounded-2xl justify-between overflow-hidden bg-yellow
+        @apply smm:w-full smm:min-h-245 md:h-550 flex flex-col relative rounded-2xl justify-between overflow-hidden bg-yellow
     }
 
     .card-right-title {
