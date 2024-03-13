@@ -27,7 +27,7 @@
 }
     .btn--simple {
         @apply flex justify-center items-center rounded-full
-        border-none bg-yellow w-[40px] h-[40px]
+        border-none bg-yellow w-40px h-40px
     }
 
     .btn--noSimple {
@@ -35,7 +35,7 @@
     }
 
     .btn--bg-none {
-        @apply  rounded-full border-none bg-white p-[10px]
+        @apply  rounded-full border-none bg-white p-10px
     }
 
     .btn--select {

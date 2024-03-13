@@ -5,7 +5,7 @@
   <Section class="sec-1">
     <Container class="container">
       <!--   header   -->
-      <div class="pt-[25px]">
+      <div class="pt-25px">
         <Header>
           <Nav class="nav">
             <Row :is-simple="true" class="nav-row">
@@ -81,8 +81,8 @@
           </div>
         </div>
 
-        <div class="md:pl-[100px] relative">
-          <p class="font-lato font-500 text-[36px]
+        <div class="md:pl-100px relative">
+          <p class="font-lato font-500 text-2xl
            text-white absolute top-[120px] left-[30px] smm:hidden md:flex"
           >
             $299
@@ -96,11 +96,11 @@
             <Img src="../public/1 1.png" alt="fasion" height="619" />
           </div>
           <div
-            class="rounded-full bg-yellow w-110 h-110 p-[50px] flex
+            class="rounded-full bg-yellow w-110 h-110 p-50px flex
             justify-center items-center absolute
             top-[160px] left-[100px] z-999 smm:hidden md:flex"
           >
-            <span class="font-roboto font-700 text-[26px]"> 40% OFF </span>
+            <span class="font-roboto font-700 text-xmd"> 40% OFF </span>
           </div>
           <div class="flex flex-col gap-10 items-center absolute right-0 top-[230px] smm:hidden md:flex">
             <div class="w-21 h-21 bg-white rounded-full"></div>
@@ -189,9 +189,9 @@
   <Section class="sec-3">
     <Container class="min-w-full">
       <div class="flex flex-col overflow-hidden">
-        <h2 class="title-sellers smm:pl-[10px] md:pl-0">Best Sellers</h2>
+        <h2 class="title-sellers smm:pl-10px md:pl-0">Best Sellers</h2>
         <div class="box-sellers">
-          <Row class="w-full flex smm:flex-nowrap md:flex-wrap overflow-x-scroll gap-[15px] flex-wrap pl-[5px]">
+          <Row class="w-full flex smm:flex-nowrap md:flex-wrap overflow-x-scroll gap-15 flex-wrap pl-5px">
             <Product
               v-for="(item, index) in visible"
               :product="item"
@@ -211,7 +211,7 @@
   <Section class=" w-full h-449 flex smm:justify-center md:justify-start items-center overflow-hidden bg-green relative">
     <div class="w-450 h-full bg-yellow relative smm:hidden md:flex">
       <div class="flex flex-col gap-30 absolute top-[70px] left-[100px]">
-        <p class="font-roboto font-700 text-[64px]">
+        <p class="font-roboto font-700 text-5.5xl">
           70% OFF
         </p>
         <div class="h-413 smm:hidden md:flex">
@@ -220,47 +220,47 @@
       </div>
     </div>
     <div class="flex flex-col smm:justify-center smm:items-center md:items-start md:justify-start gap-80  absolute smm:top-[100px] md:top-[70px] smm:left-[10px] md:left-[670px] ">
-      <h3 class="font-lato font-bold smm:text-[32px] md:text-[64px] text-white">
+      <h3 class="font-lato font-bold smm:text-xlg md:text-5.5xl text-white">
         Sale ends soon
       </h3>
       <div class="flex flex-nowrap smm:gap-15 md:gap-30">
 
 
         <div class="box- flex flex-col items-center gap-10">
-          <div class="smm:px-[30px] smm:py-[20px] md:px-[50px] rounded-8px md:py-[19px] bg-opacity-025 text-white font-roboto font-bold smm:text-[24px] md:text-[64px]">
+          <div class="smm:px-30px smm:py-20px md:px-50px rounded-8px md:py-19px bg-opacity-025 text-white font-roboto font-bold smm:text-md md:text-5.5xl">
             3
           </div>
-          <span class="font-roboto font-light smm:text-[12px] md:text-[24px] capitalize text-white">
+          <span class="font-roboto font-light smm:text-smm md:text-md capitalize text-white">
             days
           </span>
         </div>
 
         
         <div class="box- flex flex-col items-center gap-10">
-          <div class="smm:px-[30px] smm:py-[20px] md:px-[50px] rounded-8px md:py-[19px] bg-opacity-025 text-white font-roboto font-bold smm:text-[24px] md:text-[64px]">
+          <div class="smm:px-30px smm:py-20px md:px-50px rounded-8px md:py-19px bg-opacity-025 text-white font-roboto font-bold smm:text-md md:text-5.5xl">
             3
           </div>
-          <span class="font-roboto font-light smm:text-[12px] md:text-[24px] capitalize text-white">
+          <span class="font-roboto font-light smm:text-smm md:text-md capitalize text-white">
             hours
           </span>
         </div>
 
 
         <div class="box- flex flex-col items-center gap-10">
-          <div class="smm:px-[30px] smm:py-[20px] md:px-[50px] rounded-8px md:py-[19px] bg-opacity-025 text-white font-roboto font-bold smm:text-[24px] md:text-[64px]">
+          <div class="smm:px-30px smm:py-20px md:px-50px rounded-8px md:py-19px bg-opacity-025 text-white font-roboto font-bold smm:text-md md:text-5.5xl">
             3
           </div>
-          <span class="font-roboto font-light smm:text-[12px] md:text-[24px] capitalize text-white">
+          <span class="font-roboto font-light smm:text-smm md:text-md capitalize text-white">
             Minutes
           </span>
         </div>
 
 
         <div class="box- flex flex-col items-center gap-10">
-          <div class="smm:px-[30px] smm:py-[20px] md:px-[50px] rounded-8px md:py-[19px] bg-opacity-025 text-white font-roboto font-bold smm:text-[24px] md:text-[64px]">
+          <div class="smm:px-30px smm:py-20px md:px-50px rounded-8px md:py-19px bg-opacity-025 text-white font-roboto font-bold smm:text-md md:text-5.5xl">
             3
           </div>
-          <span class="font-roboto font-light smm:text-[12px] md:text-[24px] capitalize text-white">
+          <span class="font-roboto font-light smm:text-smm md:text-md capitalize text-white">
             Seconds
           </span>
         </div>

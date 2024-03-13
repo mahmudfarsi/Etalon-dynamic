@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Header class="bg-green py-[25px] px-[80px]">
+        <Header class="bg-green py-25px px-80px">
             <Nav class="nav">
               <Row
                 :is-simple="true"
