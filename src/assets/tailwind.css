@@ -64,7 +64,7 @@
     }
 
     .main-left {
-        @apply relative z-[999]
+        @apply relative z-999
     }
 
     .box-left {
@@ -87,11 +87,11 @@
     }
 
     .main-right-mobile {
-        @apply w-208 mt-[-15px] mx-[40px] md:hidden relative z-[998]
+        @apply w-208 mt-[-15px] mx-[40px] md:hidden relative z-998
     }
 
     .main-right-desktop {
-        @apply w-342 mt-[45px] mr-[190px] smm:hidden md:flex relative z-[998]
+        @apply w-342 mt-[45px] mr-[190px] smm:hidden md:flex relative z-998
     }
 
 

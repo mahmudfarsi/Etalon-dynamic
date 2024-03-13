@@ -1,5 +1,5 @@
 <template>
-  <Nav class="w-full bg-yellow md:hidden z-[1000]">
+  <Nav class="w-full bg-yellow md:hidden z-1000">
     <Row  tag="ul" class="flex flex-nowrap justify-between">
       <li>
         <Button :is-icon-only="true" icon="phone" tag="router-link" :to="{name:'phone'}"/>

@@ -98,7 +98,7 @@
           <div
             class="rounded-full bg-yellow w-110 h-[110px] p-[50px] flex
             justify-center items-center absolute
-            top-[160px] left-[100px] z-[999] smm:hidden md:flex"
+            top-[160px] left-[100px] z-999 smm:hidden md:flex"
           >
             <span class="font-roboto font-700 text-[26px]"> 40% OFF </span>
           </div>
