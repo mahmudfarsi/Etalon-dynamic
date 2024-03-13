@@ -193,7 +193,7 @@
         <div class="box-sellers">
           <Row class="w-full flex smm:flex-nowrap md:flex-wrap overflow-x-scroll gap-15 flex-wrap pl-5px">
             <Product
-              v-for="(item, index) in visible"
+              v-for="(item, _) in visible"
               :product="item"
               :key="item.id"
             />
