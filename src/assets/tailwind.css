@@ -177,6 +177,16 @@
     }
 
     .btn-more {
-        @apply w-207 border-none rounded-md bg-black font-lato font-normal text-white px-40px py-16px hidden md:flex
+        @apply w-207 border-none rounded-md bg-black font-lato font-normal
+         text-white px-40px py-16px hidden md:flex
+    }
+
+
+
+    /*          sec-4            */
+
+    .sec-4 {
+        @apply w-full h-449 flex smm:justify-center
+         md:justify-start items-center overflow-hidden bg-green relative
     }
 }

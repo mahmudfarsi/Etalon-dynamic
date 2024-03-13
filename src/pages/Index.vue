@@ -208,7 +208,7 @@
 
   <!--  section      -     4     -->
   <!--  footer  -->
-  <Section class=" w-full h-449 flex smm:justify-center md:justify-start items-center overflow-hidden bg-green relative">
+  <Section class="sec-4 ">
     <div class="w-450 h-full bg-yellow relative smm:hidden md:flex">
       <div class="flex flex-col gap-30 absolute top-[70px] left-[100px]">
         <p class="font-roboto font-700 text-5.5xl">
