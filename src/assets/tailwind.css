@@ -37,7 +37,7 @@
     }
 
     .logo {
-        @apply font-lato font-black text-[36px] text-white
+        @apply font-lato font-black text-2xl text-white
     }
 
     .nav-list {
@@ -71,27 +71,27 @@
         @apply md:pl-[0px]
     }
     .year {
-        @apply  font-lato font-normal italic smm:text-[30px] md:text-[60px] text-white
+        @apply  font-lato font-normal italic smm:text-lg md:text-5xl text-white
     }
 
     .main-title {
-        @apply  w-[330px] font-lato font-black md:text-[112px] text-[60px] text-white
+        @apply  w-330 font-lato font-black md:text-6xl text-5xl text-white
     }
 
     .sub-title {
-        @apply font-lato font-normal text-[18px] md:text-[25px] text-white
+        @apply font-lato font-normal text-base md:text-xmd text-white
     }
 
     .btn-main {
-        @apply bg-yellow rounded-md px-[40px] py-[16px] w-[180px] whitespace-nowrap mt-[20px] font-lato font-normal text-[14px]
+        @apply bg-yellow rounded-md px-[40px] py-[16px] w-180 whitespace-nowrap mt-[20px] font-lato font-normal text-sm
     }
 
     .main-right-mobile {
-        @apply w-[208.08px] mt-[-15px] mx-[40px] md:hidden relative z-[998]
+        @apply w-208 mt-[-15px] mx-[40px] md:hidden relative z-[998]
     }
 
     .main-right-desktop {
-        @apply w-[342px] mt-[45px] mr-[190px] smm:hidden md:flex relative z-[998]
+        @apply w-342 mt-[45px] mr-[190px] smm:hidden md:flex relative z-[998]
     }
 
 
@@ -113,7 +113,7 @@
     }
 
     .title-collection  {
-        @apply font-lato font-normal text-[32px]
+        @apply font-lato font-normal text-xlg
     }
 
     .row-boxs {
@@ -125,7 +125,7 @@
     }
 
     .card-left-title {
-        @apply font-lato font-bold text-[18px] absolute top-[15px] left-[15px]
+        @apply font-lato font-bold text-base absolute top-[15px] left-[15px]
     }
 
     .card-img-mobile {
@@ -137,7 +137,7 @@
     }
 
     .btn-collection {
-        @apply absolute bottom-[15px] right-[15px] bg-black rounded-md font-lato font-normal text-[14px] text-white px-[40px] py-[16px]
+        @apply absolute bottom-[15px] right-[15px] bg-black rounded-md font-lato font-normal text-sm text-white px-[40px] py-[16px]
     }
 
     .card-right {
@@ -145,18 +145,18 @@
     }
 
     .card-right-title {
-        @apply min-w-[139px] max-w-[185px] font-lato font-bold text-[18px] text-center absolute top-[10px] right-[-6px]
+        @apply min-w-[139px] max-w-[185px] font-lato font-bold text-base text-center absolute top-[10px] right-[-6px]
     }
 
     .title-off {
-        @apply min-w-[95px] max-w-[189px] whitespace-nowrap font-lato font-bold text-[24px]
+        @apply min-w-[95px] max-w-[189px] whitespace-nowrap font-lato font-bold text-md
     }
 
     .btn-collection-right {
-        @apply absolute bottom-[15px] right-[15px] bg-black rounded-md font-lato font-normal text-[14px] text-white px-[40px] py-[16px]
+        @apply absolute bottom-[15px] right-[15px] bg-black rounded-md font-lato font-normal text-sm text-white px-[40px] py-[16px]
     }
     .btn-collection-left {
-        @apply absolute bottom-[15px] right-[15px] bg-black rounded-md font-lato font-normal text-[14px] text-white px-[40px] py-[16px]
+        @apply absolute bottom-[15px] right-[15px] bg-black rounded-md font-lato font-normal text-sm text-white px-[40px] py-[16px]
     }
 
 
@@ -169,7 +169,7 @@
     }
 
     .title-sellers {
-        @apply font-lato font-normal smm:text-[32px] md:text-[48px]
+        @apply font-lato font-normal smm:text-xlg md:text-4xl
     }
 
     .box-sellers {
@@ -177,6 +177,6 @@
     }
 
     .btn-more {
-        @apply w-[207px] border-none rounded-md bg-black font-lato font-normal text-white px-[40px] py-[16px] hidden md:flex
+        @apply w-207 border-none rounded-md bg-black font-lato font-normal text-white px-[40px] py-[16px] hidden md:flex
     }
 }

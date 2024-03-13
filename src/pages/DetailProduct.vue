@@ -53,7 +53,7 @@
     <main v-if="product" class="w-full h-screen">
       <Container>
         <div class="w-full h-screen flex pt-[150px] items-start justify-around">
-          <div class="w-[650px] h-[500px] flex justify-center overflow-hidden">
+          <div class="w-650 h-[500px] flex justify-center overflow-hidden">
             <Img
               :src="product.image"
               :alt="product.title "
@@ -61,14 +61,14 @@
               height="450"
             />
           </div>
-          <div class="w-[480px] h-auto flex flex-col gap-[70px]">
+          <div class="w-480 h-auto flex flex-col gap-[70px]">
             <h2 class="font-lato font-normal">
               {{ product.title }}
             </h2>
             <p class="mt-[20px] font-roboto font-light">
               {{ product.description }}
             </p>
-            <div class="w-[300px] flex justify-between mt-[15px]">
+            <div class="w-300 flex justify-between mt-[15px]">
               <span class="prcie font-lato font-normal"> price: {{ price }} </span>
               <span class="font-lato font-normal">
                 Rate: {{ product.rating.rate }}

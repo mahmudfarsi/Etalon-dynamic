@@ -96,16 +96,16 @@
             <Img src="../public/1 1.png" alt="fasion" height="619" />
           </div>
           <div
-            class="rounded-full bg-yellow w-[110px] h-[110px] p-[50px] flex
+            class="rounded-full bg-yellow w-110 h-[110px] p-[50px] flex
             justify-center items-center absolute
             top-[160px] left-[100px] z-[999] smm:hidden md:flex"
           >
             <span class="font-roboto font-700 text-[26px]"> 40% OFF </span>
           </div>
           <div class="flex flex-col gap-[10px] items-center absolute right-0 top-[230px] smm:hidden md:flex">
-            <div class="w-[21px] h-[21px] bg-white rounded-full"></div>
-            <div class="w-[16px] h-[16px] bg-opacity-20 rounded-full"></div>
-            <div class="w-[16px] h-[16px] bg-opacity-20 rounded-full"></div>
+            <div class="w-21 h-[21px] bg-white rounded-full"></div>
+            <div class="w-16 h-[16px] bg-opacity-20 rounded-full"></div>
+            <div class="w-16 h-[16px] bg-opacity-20 rounded-full"></div>
           </div>
           <div class="btns flex gap-[15px] absolute left-0 bottom-[30px] smm:hidden md:flex">
             <Button  icon="left" class="bg-green border-none"/>
@@ -209,7 +209,7 @@
   <!--  section      -     4     -->
   <!--  footer  -->
   <Section class=" w-full h-[449px] flex smm:justify-center md:justify-start items-center overflow-hidden bg-green relative">
-    <div class="w-[450px] h-full bg-yellow relative smm:hidden md:flex">
+    <div class="w-450 h-full bg-yellow relative smm:hidden md:flex">
       <div class="flex flex-col gap-[30px] absolute top-[70px] left-[100px]">
         <p class="font-roboto font-700 text-[64px]">
           70% OFF

@@ -14,6 +14,63 @@ export default {
         'smm':'300px'
         // => @media (min-width: 330px) { ... }
       },
+      width:{
+        '16':'16px',
+        '21':'21px',
+        '110':'110px',
+        '180':'180px',
+        '207':'207px',
+        '208':'208px',
+        '300':'300px',
+        '342':'342px',
+        '330':'330px',
+        '450':'450px',
+        '480':'480px',
+        '650':'650px'
+      },
+
+      maxWidth:{
+        
+      },
+
+      minWidth:{
+
+      },
+
+  
+
+      gap:{
+
+      },
+
+
+      fontSize:{
+        smm:'13px',
+        sm:'14px',
+        xsm:'16px',
+        base:'18px',
+        md:'24px',
+        'xmd':'25px',
+        lg:'30px',
+        'xlg':'32px',
+        '2xl':'36px',
+        '3xl':'40px',
+        '4xl':'48px',
+        '5xl':'60px',
+        '6xl':'112px'
+      },
+
+
+      zIndex:{
+
+      },
+
+
+      padding:{
+        '50px':'50px'
+      },
+
+
       fontWeight:{
         black:'900',
         bold:'700',
@@ -27,9 +84,6 @@ export default {
         'yellow':'rgba(253, 222, 103, 1)',
         'green':'rgba(59, 95, 71, 1)',
         'darkgreen':'rgba(27, 45, 34, 1)',
-        'lineargreens':['rgba(42, 64, 50, 1)','rgba(58, 94, 70, 1)'],
-        'light-blue':'#1BD9F2',
-        'light-green':'#1BF2C4',
         'gray':'rgba(255, 255, 255, 0.2)',
         'gray-card' :'rgba(197, 194, 202, 1)',
         'light-gray':'rgba(233, 233, 233, 1)',
@@ -38,9 +92,6 @@ export default {
         'opacity-20':'rgba(255, 255, 255, 0.2)',
         'opacity-025': 'rgba(24, 24, 24, 0.25)'
     
-      },
-      padding:{
-        '50px':'50px'
       },
       borderRadius:{
         '8px':'8px'
