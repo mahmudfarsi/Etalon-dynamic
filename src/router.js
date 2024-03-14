@@ -52,6 +52,11 @@ export default createRouter({
             name:'shop',
             path:'/shop',
             component:import('@/pages/Shop.vue')
+        },
+        {
+            name:'404',
+            path:'pathMatch(.*)*',
+            component:import('@/pages/404.vue')
         }
     ]
 })
