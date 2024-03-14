@@ -11,6 +11,14 @@
     margin: 0;
 }
 
+@layer components {
+
+    
+    .product-card {
+        @apply w-303 min-w-300
+    }
+}
+
 
 
 @layer utilities{
@@ -20,7 +28,7 @@
     }
 
     .container {
-        @apply relative
+        @apply relative 
     }
 
 
@@ -71,11 +79,13 @@
         @apply md:pl-0px
     }
     .year {
-        @apply  font-lato font-normal italic smm:text-lg md:text-5xl text-white
+        @apply  font-lato font-normal italic smm:text-lg md:text-5xl
+         text-white
     }
 
     .main-title {
-        @apply  w-330 font-lato font-black md:text-6xl text-5xl text-white
+        @apply  w-330 font-lato font-black md:text-6xl text-5xl
+         text-white
     }
 
     .sub-title {
@@ -83,7 +93,8 @@
     }
 
     .btn-main {
-        @apply bg-yellow rounded-md px-40px py-16px w-180 whitespace-nowrap mt-20px font-lato font-normal text-sm
+        @apply bg-yellow rounded-md px-40px py-16px w-180
+         whitespace-nowrap mt-20px font-lato font-normal text-sm
     }
 
     .main-right-mobile {
@@ -117,15 +128,19 @@
     }
 
     .row-boxs {
-        @apply w-full flex smm:flex-col smm:gap-35 md:flex-row md:justify-between  md:gap-70
+        @apply w-full flex smm:flex-col smm:gap-35 md:flex-row 
+        md:justify-between  md:gap-70
     }
 
     .card-left {
-        @apply smm:w-full md:max-w-550  smm:min-h-440 md:h-550 bg-gray-card flex flex-col relative rounded-2xl overflow-hidden
+        @apply smm:w-full md:max-w-550  smm:min-h-440 md:h-550
+         bg-gray-card flex flex-col relative rounded-2xl 
+         overflow-hidden
     }
 
     .card-left-title {
-        @apply font-lato font-bold text-base absolute top-[15px] left-[15px]
+        @apply font-lato font-bold text-base absolute top-[15px]
+         left-[15px]
     }
 
     .card-img-mobile {
@@ -133,30 +148,37 @@
     }
 
     .card-img-desktop {
-        @apply  w-full absolute bottom-[-10px] left-[55px] smm:hidden lg:flex
+        @apply  w-full absolute bottom-[-10px] left-[55px] smm:hidden 
+        lg:flex
     }
 
     .btn-collection {
-        @apply absolute bottom-[15px] right-[15px] bg-black rounded-md font-lato font-normal text-sm text-white px-40px py-16px
+        @apply absolute bottom-[15px] right-[15px] bg-black rounded-md
+         font-lato font-normal text-sm text-white px-40px py-16px
     }
 
     .card-right {
-        @apply smm:w-full smm:min-h-245 md:h-550 flex flex-col relative rounded-2xl justify-between overflow-hidden bg-yellow
+        @apply smm:w-full smm:min-h-245 md:h-550 flex flex-col relative
+         rounded-2xl justify-between overflow-hidden bg-yellow
     }
 
     .card-right-title {
-        @apply min-w-139 max-w-185 font-lato font-bold text-base text-center absolute top-[10px] right-[-6px]
+        @apply min-w-139 max-w-185 font-lato font-bold text-base 
+        text-center absolute top-[10px] right-[-6px]
     }
 
     .title-off {
-        @apply min-w-95 max-w-189 whitespace-nowrap font-lato font-bold text-md
+        @apply min-w-95 max-w-189 whitespace-nowrap font-lato font-bold 
+        text-md
     }
 
     .btn-collection-right {
-        @apply absolute bottom-[15px] right-[15px] bg-black rounded-md font-lato font-normal text-sm text-white px-40px py-16px
+        @apply absolute bottom-[15px] right-[15px] bg-black rounded-md 
+        font-lato font-normal text-sm text-white px-40px py-16px
     }
     .btn-collection-left {
-        @apply absolute bottom-[15px] right-[15px] bg-black rounded-md font-lato font-normal text-sm text-white px-40px py-16px
+        @apply absolute bottom-[15px] right-[15px] bg-black rounded-md 
+        font-lato font-normal text-sm text-white px-40px py-16px
     }
 
 
@@ -172,21 +194,152 @@
         @apply font-lato font-normal smm:text-xlg md:text-4xl
     }
 
-    .box-sellers {
-        @apply mt-60px  flex flex-col justify-center items-center gap-50
+    .row-cards {
+        @apply w-full flex smm:flex-nowrap md:flex-wrap 
+        overflow-x-scroll gap-15 flex-wrap pl-5px
     }
 
+    .box-sellers {
+        @apply mt-60px  flex flex-col justify-center items-center
+         gap-50 smm:pl-10px md:pl-0
+    }
+
+
     .btn-more {
-        @apply w-207 border-none rounded-md bg-black font-lato font-normal
+        @apply w-207 border-none rounded-md bg-black font-lato
+         font-normal
          text-white px-40px py-16px hidden md:flex
     }
 
 
 
     /*          sec-4            */
+    /*          footer           */
 
     .sec-4 {
         @apply w-full h-449 flex smm:justify-center
-         md:justify-start items-center overflow-hidden bg-green relative
+         md:justify-start items-center overflow-hidden bg-green
+          relative
     }
+
+    .footer {
+        @apply w-450 h-full bg-yellow relative smm:hidden md:flex
+    }
+
+    .footer-off {
+        @apply flex flex-col gap-30 absolute top-[70px] left-[100px]
+    }
+
+    .footer-off--title {
+        @apply font-roboto font-bold text-5.5xl
+    }
+    
+    .footer-box--img {
+        @apply h-413 smm:hidden md:flex
+    }
+
+    .footer-sale {
+        @apply flex flex-col smm:justify-center smm:items-center
+         md:items-start md:justify-start gap-80  absolute smm:top-[100px]
+         md:top-[70px] smm:left-[10px] md:left-[670px] 
+    }
+
+    .footer-sale--title {
+        @apply font-lato font-bold smm:text-xlg md:text-5.5xl
+         text-white
+    }
+
+    .box-dates {
+        @apply flex flex-nowrap smm:gap-15 md:gap-30
+    }
+
+    .box-date {
+        @apply flex flex-col items-center gap-10
+    }
+
+    .box-date--number {
+        @apply smm:px-30px smm:py-20px md:px-50px rounded-8px md:py-19px
+         bg-opacity-025 text-white font-roboto font-bold smm:text-md
+          md:text-5.5xl
+    }
+
+    .box-date--title {
+        @apply font-roboto font-light smm:text-smm md:text-md 
+        capitalize text-white
+    }
+
+
+
+
+
+
+
+    /*           baskets.vue           */
+
+    .basket-box {
+        @apply flex flex-col gap-30 smm:pt-6 md:pt-14
+        flex flex-col gap-30 smm:pt-6 md:pt-14
+    }
+
+    .basket-box--title {
+        @apply capitalize font-roboto font-medium text-4xl
+        capitalize font-roboto font-medium text-4xl
+    }
+
+    .basket-row {
+        @apply w-full pb-50px flex flex-wrap gap-15
+        w-full pb-50px flex flex-wrap gap-15
+    }
+
+    .basket-row--card {
+        @apply shadow-md rounded-lg px-10px py-10px
+        shadow-md rounded-lg px-10px py-10px
+    }
+
+
+
+
+
+
+    /*          collection.vue           */
+
+    .collection-main {
+        @apply w-full bg-light-gray pt-50px flex flex-row 
+        justify-center items-center
+    }
+
+
+
+
+
+
+
+
+    /*           products.vue            */
+
+    .product-card--header {
+        @apply bg-white rounded-2xl overflow-hidden flex flex-col 
+        items-center gap-10  pb-22px pt-5px
+    }
+
+    .box-fav {
+        @apply w-full flex justify-end
+    }
+
+    .product-card--body {
+        @apply flex justify-between flex-nowrap mt-10px
+    }
+
+    .product-card-title {
+        @apply flex flex-col h-full
+    }
+
+    .card-title {
+        @apply font-roboto font-medium text-smm text-black
+    }
+
+    .card-price {
+        @apply font-roboto font-light text-xsm text-gray-span
+    }
+
 }

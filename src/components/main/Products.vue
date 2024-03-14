@@ -1,10 +1,10 @@
 <template>
-  <Card class="w-303 min-w-300">
+  <Card class="product-card">
     <template #header>
         <div
-          class="bg-white rounded-2xl overflow-hidden flex flex-col items-center gap-10  pb-22px pt-5px"
+          class="product-card--header"
         >
-          <div class="w-full flex justify-end">
+          <div class="box-fav">
             <label>
               <Button
                 :icon="isFav ? 'fill-heart' : 'empty-heart'"
@@ -20,12 +20,12 @@
         </div>
     </template>
     <template #body>
-      <div class="left flex justify-between flex-nowrap mt-10px">
-        <div class="flex flex-col h-full">
-          <h4 class="font-roboto font-medium text-smm text-black">
+      <div class="product-card--body">
+        <div class="product-card-title">
+          <h4 class="card-title">
             {{ product.title }}
           </h4>
-          <span class="font-roboto font-light text-xsm text-gray-span">
+          <span class="card-price">
             {{ price }}
           </span>
         </div>
@@ -80,14 +80,4 @@ const { select, isAdd } = useBasket();
 const listBasket = computed(() => useBasket().basketList);
 const isAdded = computed(() => isAdd(props.product.id));
 
-// const isFav = ref(false);
-
-// const toggle = () => {
-//   isFav.value = !isFav.value;
-// };
-
-const isSelect = ref(false);
-// const select = () => {
-//   isSelect.value = !isSelect.value
-// }
 </script>

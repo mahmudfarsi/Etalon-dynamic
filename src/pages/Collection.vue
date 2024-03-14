@@ -51,7 +51,7 @@
       </Nav>
     </Header>
     <main
-      class="w-full bg-light-gray pt-50px flex flex-row justify-center items-center"
+      class="collection-main"
     >
       <Container>
         <Row tag="ul" class="flex flex-wrap gap-15">

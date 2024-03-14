@@ -55,33 +55,34 @@
         </Row>
       </Nav>
     </Header>
-    <Container>
 
+    <!--    main    -->
+    <Container>
       <!--    baskets    -->
-      <div class="flex flex-col gap-30 smm:pt-6 md:pt-14">
-        <h1 class="capitalize font-roboto font-medium text-4xl">baskets</h1>
-        <Row tag="ul" class="w-full pb-50px flex flex-wrap gap-15">
+      <div class="basket-box">
+        <h2 class="basket-box--title">baskets</h2>
+        <Row tag="ul" class="basket-row">
           <Product
             v-for="item in findBaskets"
             :product="item"
-            class="shadow-md rounded-lg px-10px py-10px"
+            class="basket-row--card"
           />
         </Row>
       </div>
 
-
       <!--  favorites  -->
-      <div class="flex flex-col gap-30 smm:pt-6 md:pt-14 mt-3">
-        <h1 class="capitalize font-roboto font-medium text-4xl">favorites</h1>
-        <Row tag="ul" class="w-full pb-50px flex flex-wrap gap-15">
+      <div class="baskett-box mt-3">
+        <h2 class="basket-box--title">favorites</h2>
+        <Row tag="ul" class="basket-row">
           <Product
             v-for="item in findFav"
             :product="item"
-            class="shadow-md rounded-lg px-10px py-10px"
+            class="basket-row--card"
           />
         </Row>
       </div>
     </Container>
+
     <NavMobile class="fixed bottom-0" />
   </div>
 </template>
